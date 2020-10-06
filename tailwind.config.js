@@ -21,7 +21,10 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
-          color: theme("colors.black")
+          color: theme("colors.black"),
+          'pre code': {
+            fontSize: '0.8em'
+          }
         }
       }
     }),

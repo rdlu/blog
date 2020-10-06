@@ -21,7 +21,7 @@
     "tailwindcss": "^1.4.6"
   },
   "license": "MIT",
-  "name": "rdlu-blog-starter",
+  "name": "moonset-blog-starter",
   "scripts": {
     "dev": "next",
     "dev-debug": "NODE_OPTIONS='--inspect' next dev",
