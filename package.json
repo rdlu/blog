@@ -23,6 +23,7 @@
   "name": "rdlu-blog-starter",
   "scripts": {
     "dev": "next",
+    "dev-debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc"
