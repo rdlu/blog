@@ -21,19 +21,7 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
-          color: theme("colors.black"),
-          h1: {
-            fontFamily: theme("fontFamily.title").join(", "),
-            fontWeight: 500
-          },
-          h2: {
-            fontFamily: theme("fontFamily.title").join(", "),
-            fontWeight: 500
-          },
-          h3: {
-            fontFamily: theme("fontFamily.title").join(", "),
-            fontWeight: 500
-          }
+          color: theme("colors.black")
         }
       }
     }),

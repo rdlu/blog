@@ -13,3 +13,17 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer base {
+  h1 {
+    @apply font-title;
+    font-weight: 500;
+  }
+  h2 {
+    @apply font-title;
+    font-weight: 500;
+  }
+  h3 {
+    @apply font-title;
+    font-weight: 500;
+  }
+}
