@@ -1,10 +1,42 @@
 module.exports = {
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true
   },
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  purge: {
+    mode: 'all',
+    content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+    options: {
+      whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'em'],
+    }
+  },
   theme: {
+    fontFamily: {
+      title: ['Signika', 'Cantarell', 'sans-serif'],
+      sans: ['Quattrocento Sans', 'Cantarell', 'Segoe UI', 'sans-serif']
+    },
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme("colors.black"),
+          h1: {
+            fontFamily: theme("fontFamily.title").join(", "),
+            fontWeight: 500
+          },
+          h2: {
+            fontFamily: theme("fontFamily.title").join(", "),
+            fontWeight: 500
+          },
+          h3: {
+            fontFamily: theme("fontFamily.title").join(", "),
+            fontWeight: 500
+          }
+        }
+      }
+    }),
     extend: {
       colors: {
         'accent-1': '#FAFAFA',
@@ -31,7 +63,7 @@ module.exports = {
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
-      },
+      }
     },
   },
 }
