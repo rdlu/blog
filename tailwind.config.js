@@ -23,7 +23,7 @@ module.exports = {
         css: {
           color: theme("colors.black"),
           'pre code': {
-            fontSize: '0.8em'
+            fontSize: '1em'
           }
         }
       }
