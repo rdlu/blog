@@ -7,6 +7,9 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+.avatar, .prose .avatar {
+  @apply m-0 mr-4;
+}
 
 /* Start purging... */
 @tailwind utilities;
