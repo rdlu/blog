@@ -1,32 +1,31 @@
 @tailwind base;
-
 /* Write your own custom base styles here */
+h1 {
+  @apply font-title;
+  font-weight: 500;
+}
+h2 {
+  @apply font-title;
+  font-weight: 500;
+}
+h3 {
+  @apply font-title;
+  font-weight: 500;
+}
 
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
-
 /* Write you own custom component styles here */
 .avatar, .prose .avatar {
   @apply m-0 mr-4;
 }
 
-/* Start purging... */
-@tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */
-@layer base {
-  h1 {
-    @apply font-title;
-    font-weight: 500;
-  }
-  h2 {
-    @apply font-title;
-    font-weight: 500;
-  }
-  h3 {
-    @apply font-title;
-    font-weight: 500;
-  }
+.bg-space {
+  background-image: url('/assets/bg/space-footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: thick solid black;
+  color: wheat;
 }
+
+@tailwind utilities;
+/* Your own custom utilities */
