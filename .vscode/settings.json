@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "css.validate": false,
+  "postcss.validate": false,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "npm.packageManager": "yarn",
+  "eslint.packageManager": "yarn",
+  "prettier.packageManager": "yarn"
+}
